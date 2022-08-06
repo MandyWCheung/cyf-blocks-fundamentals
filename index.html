@@ -11,7 +11,57 @@
     <body>
         <h1>My CYF Blocks Project</h1>
         <!-- in the space below here you should paste the 'Static HTML' from your CYF Blocks project page -->
+        <style>
+        .main-container {width: 800px;}
+        h1 {text-align: center;}
+        .container {display: flex; justify-content: center;}
+        .box { margin: 15px;}
+        .box2, .box h3, p {display:flex; justify-content: center; align-items: center;}
+        input, button {margin: 5px 15px;}
+        .balance {display: flex; justify-content: center;}
+        .contents {margin: 0 50px;}
+        </style>
 
+        <div class="main-container">
+
+        <h1>Personal Finance Tracker</h1>
+        <div class="container">
+         <div class="box">
+          <h3>Earnings</h3>
+          <div class="contents">
+           <ul id="earnings-list"></ul>
+           <hr />
+           <p>Total: £<span id="total-earnings">0.00</span> 
+           </p>
+          </div>
+         </div>
+
+         <div class="box">
+          <h3>Expenses</h3>
+          <div class="contents">
+          <ul id="expenses-list"></ul>
+          <hr />
+          <p>Total: £<span id="total-expenses">0.00</span> 
+          </p>
+          </div>
+         </div>
+
+        </div>
+
+        <hr/>
+         <div class="balance">
+          <p>Current Balance: £<span id="balance">0.00</span></p>
+         </div>
+
+        <hr />
+
+        <div class="box2">
+         <input type="text" id="amount" />
+         <button id="button">Enter Amount</button>
+        </div>
+
+        </div>
+        </body>
         <!----->
         <script src="script.js"></script>
     </body>
